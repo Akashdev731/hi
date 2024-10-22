@@ -1,0 +1,1660 @@
+body{
+    margin : 0px;
+    padding : 0px;
+    
+}
+.hero-section
+{
+    display: flex;
+    flex-wrap: wrap;
+    width : auto;
+}
+.hero-section-content
+{
+    display: flex;
+    width : auto;
+    height : auto
+}
+.bg-image-home
+{
+    position : absolute;
+    width : auto;
+}
+.navbar
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    position : absolute;
+    top : 2%;
+    left : 16%;
+    background-color: rgb(255, 255, 255);
+    width : 1130px;
+    height : 116px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.6);
+    z-index: 1000;
+    padding : 16px;
+    border-radius: 15px;
+    margin: 0px;
+}
+.firm-logo
+{
+    width : 159px;
+    height : 55px;
+    align-items: start;
+    cursor: pointer;
+}
+
+.navbar ul
+{
+    color : rgb(18, 38, 90);
+    font-weight: 900;
+    justify-content: space-between;
+    align-items: center;
+    margin-left : 180px;
+    margin-right : 30px;
+}
+ul a{
+    font-size: 19px;
+    font-weight: 600;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.navbar-button
+{
+    position : relative;
+    background-color: rgb(254, 75, 123);
+    color : white;
+    width : 182px;
+    height : 56px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    padding : 16px 38px;
+    border : none;
+    border-radius: 30px;
+    transition: border 0.15s;
+    cursor: pointer;
+    box-shadow : 3px 3px 8px rgba(254, 75, 123 , 0.8);
+    text-wrap: nowrap;
+    margin : 0px;
+}
+.navbar-button::before
+{
+    content : '';
+    position : absolute;
+    top : 5px;
+    bottom : 5px;
+    right : 5px;
+    left : 5px;
+    border : 2px dashed rgb(190, 184, 184);
+    border-radius: 30px;
+
+}
+.navbar-button:hover::before
+{
+    top : 0px;
+    bottom : 0px;
+    right : 0px;
+    left : 0px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    padding : 16px 38px;
+    content : 'GET STARTED';
+    color : white;
+    background-color: rgb(18, 38, 90);
+    border : 1px solid rgb(254, 75, 123);
+    box-shadow: 4px 4px 4px rgba(254, 75, 123 , 0.4);
+}
+.bg-home-section-image
+{
+    position : absolute;
+    object-fit: cover;
+    opacity: 0.08;
+    height : 898px;
+    width : auto;
+}
+.img-container
+{
+    position : relative;
+    height : 898px;
+    width : auto;
+    right : -60%;
+    padding: 0px;
+    margin: 0px;
+}
+.hero-sec-img
+{
+    object-fit : cover;
+    overflow: hidden;
+    height : 858px; 
+    
+}
+.hero-section-details
+{
+    display : flex;
+    flex-wrap: wrap;
+    position : absolute;
+    flex-direction: column;
+    top : 25%;
+    left : 9%;
+    align-content: center;
+    margin-bottom: 0px;
+    padding-right: 300px;
+    flex: 1 1 300px; 
+    
+}
+.greetings
+{
+    color : rgb(254, 75, 123);
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    width : 640px;
+    height : 27px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+}
+.tagline
+{
+    color : rgb(18, 38, 90);
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+    font-size: 74px;
+    width : 590px;
+    height : 188px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    line-height: 88px;
+}
+.firm-content
+{
+    color : rgb(119, 119, 119);
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    width : 540px;
+    height : 52px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.explore-button
+{
+    position : relative;
+    background-color : rgb(254, 75, 123);
+    color : white;
+    width : 179px;
+    height : 60px;
+    font-size: 16px;
+    padding : 20px 30px;
+    border : none;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgba(254, 75, 123 , 0.4);
+    cursor: pointer;
+}
+
+.explore-button::before
+{
+    content : '';
+    position : absolute;
+    top : 5px;
+    bottom : 5px;
+    right : 5px;
+    left : 5px;
+    border : 2px dashed rgb(190, 184, 184);
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        width: 90%;
+        left: 5%;
+        top: 5%;
+    }
+
+    .hero-section-details {
+        top: 20%;
+        left: 5%;
+        padding-right: 0;
+    }
+
+    .tagline {
+        font-size: 58px;
+        width: 100%;
+        line-height: 70px;
+    }
+
+    .greetings,
+    .firm-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        margin-left: 50px;
+    }
+
+    .tagline {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .greetings {
+        font-size: 20px;
+    }
+
+    .firm-content {
+        font-size: 16px;
+    }
+
+    .explore-button {
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        width: 90%;
+        left: 5%;
+        height: auto;
+        top: 5%;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .navbar-button {
+        width: 100%;
+        max-width: 200px;
+        margin-top: 30px;
+    }
+
+    .hero-section-details {
+       
+        top: 15%;
+        left: 5%;
+        padding-right: 0;
+        width: 50%;
+    }
+
+    .tagline {
+
+        font-size: 36px;
+        line-height: 50px;
+        width: 40%;
+    }
+
+    .greetings {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .firm-content {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .explore-button {
+        width: 100%;
+        max-width: 160px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .img-container,
+    .bg-home-section-image,
+    .hero-sec-img {
+        height: auto;
+    }
+}
+.firm-moving-tags
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position : relative;
+    width : auto;
+    height : 200px;
+    background-color: rgb(254, 75, 123); 
+    bottom : 0;
+    margin-top : 900px;
+    
+}
+.firm-moving-tags img{
+    width : 200px;
+    height : 40px;
+    object-fit: none;
+    position : relative;
+    animation : moving-img 15s linear infinite;
+    
+}
+
+@keyframes moving-img {
+
+    0% {
+        right: 0px; 
+    }
+    100% {
+        right: 100%; 
+}
+}
+.service-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.service-info p {
+    color: rgb(254, 75, 123);
+    font-size: 20px;
+    font-family: "Nunito";
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.service-info h1 {
+    color: rgb(18, 38, 90);
+    font-size: 58px;
+    font-weight: bolder;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+.service-img {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-img img {
+    padding-right: 30px;
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 300px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .service-info p {
+        font-size: 18px;
+    }
+
+    .service-info h1 {
+        font-size: 40px;
+    }
+
+    .service-img {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .service-img img {
+        padding-right: 0;
+        margin-bottom: 20px;
+        max-width: 90%; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .service-info p {
+        font-size: 16px;
+    }
+
+    .service-info h1 {
+        font-size: 32px;
+    }
+
+    .service-img img {
+        max-width: 100%;
+    }
+}
+
+.daycare-service ,  .summer-camp , .online-classes
+{
+    position : relative;
+}
+.over-image
+{
+    position : absolute;
+    align-items : center;
+    left : 36%;
+    top : 38%;
+}
+.online-classes h2, .summer-camp h2 , .daycare-service h2{
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    font-family: "Nunito";
+    font-weight: bold;
+    left : 26%;
+    color: white; 
+}
+
+.online-classes p  , .summer-camp p , .daycare-service p{
+    position: absolute;
+    top: 60%;
+    font-size: 16px;
+    font-family: "Nunito";
+    font-weight: bold;
+    left : 28%;
+    color: white; 
+    color: rgb(254, 75, 123);
+}
+
+.about-content {
+    background-color: rgb(236, 246, 250);
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.about-content img {
+    width: 2000px; 
+    position: relative;
+    height: auto; 
+    object-fit: cover;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-left: 30px;
+    padding: 20px;
+    max-width: 80%; 
+}
+
+.about-details p {
+    color: rgb(254, 75, 123);
+    font-size: 20px;
+    font-family: "Nunito";
+    font-weight: 900;
+}
+
+.about-details h1 {
+    color: rgb(18, 38, 90);
+    font-weight: 900;
+    font-family: "Nunito";
+    font-size: 6vw; 
+    line-height: 1.2;
+    margin-top: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .about-content img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .about-details {
+        text-align: center; 
+    }
+
+    .about-details p {
+        font-size: 5vw; /
+    }
+
+    .about-details h1 {
+        font-size: 8vw; 
+    }
+}
+
+.kids-data
+{
+    display: flex;
+    flex-direction: row;
+    position : relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border : none;
+    border-radius : 12px;
+    left : 10%;
+    margin-top : -50px;
+    width : 1240px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    box-shadow: 8px 8px 10px rgba(255, 251, 251 , 0.5);
+}
+.kids-strength , .kids-service , .cofee-details , 
+.client-details
+{
+    display : flex;
+    display : relative;
+    align-items: center;
+    flex-direction: row;
+}
+.kids-strength h1 , .kids-service h1 , .cofee-details h1 ,
+.client-details h1
+{
+    color: rgb(254, 75, 123);
+    font-size: 54px;
+    font-family: "Nunito";
+    width : 90px;
+    margin-left: 44px;
+    font-weight: bold italic;
+}
+.kids-strength p , .kids-service p , .cofee-details p ,
+.client-details p
+{
+    margin-left: 18px;
+    color : rgb(168, 165, 165);
+    font-size : 18px;
+    font-family : "Nunito";
+    width : 100px;
+    margin-right: 44px;  
+}
+
+@media (max-width: 768px) {
+
+    .kids-data
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%; 
+        height: auto;
+    }
+
+    .kids-strength , .kids-service , .cofee-details , 
+    .client-details
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .kids-strength h1 , .kids-service h1 , .cofee-details h1, 
+    .client-details h1
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .kids-strength p , .kids-service p , .cofee-details p ,
+    .client-details p
+
+    {
+        margin: 0;
+        text-align: center;
+    }
+
+
+
+}
+.online-class-details
+{
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+    top : 50%;
+}
+.online-class-details h1
+{
+    color : rgb(254, 75, 123);
+    font-family: "Nunito";
+    font-size : 20px;
+    font-weight : bold;
+}
+.online-class-details h2
+{
+    color : rgb(18, 38, 90);
+    font-family : "Nunito";
+    font-size : 48px;
+    font-weight : bold;
+    margin-top : 18px;
+    margin-top: 39px;
+    margin-left: 20px;
+}
+.class-details
+{
+    display : flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    width : 420px;
+    height : 360px;
+    border-radius: 26px;
+    box-shadow: 8px 8px 8px rgba(255, 255, 255, 0.2);
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+.class-details-box
+{
+    margin-top: 170px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+}
+.class-details h1
+{
+    color : rgb(18, 38, 90);
+    font-family : "Nunito";
+    font-size : 20px;
+    font-weight : bold;
+}
+.class-details p
+{
+    color : rgb(139, 139, 139);
+    font-family : "Nunito";
+    font-size : 16px;
+    font-weight : bold;
+    margin-top : 6px;
+}
+.courese-details
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+.courese-details h1{
+    color : rgb(18, 38, 90);
+    font-family: "Nunito";
+    font-size : 16px;
+    font-weight : bold;
+
+}
+.courese-details p
+{
+    color : rgb(254, 75, 123);
+    font-family: "Nunito";
+    font-size : 15px;
+    font-weight : bold;
+    margin-right: 60px;
+}
+.class-price
+{
+    background-color: rgb(254, 75, 123);
+    font-family: "Nunito";
+    color : white;
+    font-size : 18px;
+    font-weight : bold;
+    height : 50px;
+    width : 110px;
+    border : none;
+    border-radius: 25px;
+    margin-top: 12px;
+
+}
+.class-details-box img
+{
+    position: relative;
+    object-fit: cover;
+    width : 380px;
+    margin-top : -430px;
+    margin-left: -10px;
+    border-radius: 12px;
+}
+.course-first-row
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+
+} 
+@media (max-width:786px){
+
+    .class-details-box img
+    {
+        
+        flex-direction: column;
+        object-fit: cover;
+        object-position: center;
+        margin-left : -5%;
+        width : 360px;
+    }
+    .class-details
+    {
+        display : flex;
+        flex-direction: column;
+        width : 100%;
+        margin-left : 25%;
+    }
+    .online-class-details h2
+    {
+        text-align: center;
+    }
+    .courese-details
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .course-first-row
+    {
+        display: flex;
+        flex-direction: column;
+        width :80%;
+        align-items: center;
+    }
+
+    .class-price
+    {
+        flex-direction: row;
+        text-align: center;
+        bottom : 0%;
+    }
+
+    .student-age
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+}
+    
+
+.content-section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.text-content {
+    background-color: #1b264f;
+    color: white;
+    padding: 50px;
+    width: 50%;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+    left : 12%;
+}
+
+.text-content h2::before {
+    content: "HOW IT WORK";
+    display: block;
+    font-size: 19px;
+    color: #f72585;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text-content .steps {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left : 12%;
+    top : 10%;
+}
+
+.text-content .steps li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+ 
+}
+
+.text-content .steps li .step-number {
+    background-color: #f72585;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border: 2px dashed rgb(188, 184, 184);
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.text-content .steps li h3 {
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 0 0 10px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-content .steps li p {
+    margin: 0;
+    color: #b0b0b0;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    width : 520px;
+}
+
+.image-content {
+    width: 50%;
+    position: relative;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    display: block;
+}
+
+@media (max-width : 786px)
+{
+    
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.text-content {
+    background-color: #1b264f;
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+.text-content h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    position: relative;
+    left : 12%;
+}
+
+.text-content h2::before {
+    content: "HOW IT WORK";
+    display: block;
+    font-size: 19px;
+    color: #f72585;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text-content .steps {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    left : 12%;
+    top : 10%;
+}
+
+.text-content .steps li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+ 
+}
+
+.text-content .steps li .step-number {
+    background-color: #f72585;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding : 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border: 2px dashed rgb(188, 184, 184);
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.text-content .steps li h3 {
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 0 0 10px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-content .steps li p {
+    margin: 0;
+    color: #b0b0b0;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    width : 200px;
+}
+
+.image-content {
+    width: 100%;
+    position: relative;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    display: block;
+}
+
+}
+
+.testimonal-content
+{
+    display :flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width : auto;
+    height : auto;
+    margin-top: 100px;
+    margin-bottom: 500px;
+    flex: 1 1; 
+}
+.testimonal-images img
+{
+    object-fit: cover;
+    width: 30%;
+    height : auto;
+    position: absolute;
+    left : 10%;
+}
+
+.testimonal-contents
+{
+    display :flex;
+    flex-direction: column;
+    position: absolute;
+    right : 10%;
+}
+.testimonal-contents h1
+{
+    color: rgb(254, 75, 123);
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.testimonal-contents h2{
+    color : rgb(18, 38, 90);
+    font-family: "Nunito";
+    font-size : 40px;
+    font-weight : bold;
+    width : 380px;
+    margin-top: 6px;
+}
+
+@media (max-width:786px)
+{
+    
+.testimonal-content
+{
+   
+    display :flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width : auto;
+    height : auto;
+    margin-top: 50px;
+    margin-bottom: 500px; 
+    align-items: center;
+
+}
+.testimonal-images img
+{
+    position: relative;
+    object-fit: contain;
+    width: 50%;
+    height : 50%;
+    margin: 0px;
+    left : 25%;
+    top : 8%;
+
+}
+
+.testimonal-contents
+{
+    position: relative;
+    top : 70%;
+    align-items: center;
+    left : 1%;
+   
+}
+.testimonal-contents h1
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.testimonal-contents h2{
+    color : rgb(18, 38, 90);
+    font-family: "Nunito";
+    font-size : 40px;
+    font-weight : bold;
+    width : 380px;
+    margin-top: 6px;
+    align-items: center;
+    text-align: center;
+    
+}
+}
+
+.contact-input
+{
+    display :flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(220, 231, 249);
+    height : 700px;
+    width : 100%;
+    justify-content: space-around;
+
+}
+.design-image
+{
+    width : 400px;
+    object-fit: cover;
+    position: relative;
+}
+.contact-heading
+{
+    display :flex;
+    flex-direction: column;
+    position: relative;  
+}
+.contact-heading h1
+{
+    color: rgb(254, 75, 123);
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 40px;
+}
+.contact-heading h2
+{
+    color : rgb(18, 38, 90);
+    font-family: "Nunito";
+    font-size : 40px;
+    font-weight : bold;
+    width : 380px;
+    margin-top: 10px;
+}
+.input-tags
+{
+    display : flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-class{
+    padding : 18px 50px;
+    border : 1px solid black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.comment-class{
+    width : 440px;
+    height : 100px;
+    border : 1px solid black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    color : rgb(109, 106, 106);
+    padding-inline-start: 0px;
+}
+
+.input-tags input
+{
+    color : rgb(223, 220, 220);
+    font-size: 14px;
+    align-items: start;
+    position: relative;
+    padding-inline-start: 10px;
+}
+
+@media screen and (max-width : 786px)
+{
+    
+.contact-input
+{
+    display :flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(220, 231, 249);
+    height : auto;
+    width : 100%;
+    justify-content: space-around;
+    padding-bottom: 20px;
+
+}
+.design-image
+{
+    width : 70%;
+    object-fit: cover;
+    position: relative;
+}
+.contact-heading
+{
+    display :flex;
+    flex-direction: column;
+    position: relative;  
+   
+}
+.contact-heading h1
+{
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 40px;
+}
+.contact-heading h2
+{
+    text-align: center;
+    margin-top: 10px;
+    width : auto;
+    font-size: 5vw;
+}
+.input-tags
+{
+    display : flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-class{
+    width : auto;
+    border : 1px solid black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.comment-class{
+    width : auto;
+    height : 80px;
+    border : 1px solid black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    color : rgb(109, 106, 106);
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-inline-start: 0px;
+}
+
+.input-tags input
+{
+    color : rgb(223, 220, 220);
+    font-size: 14px;
+    align-items: start;
+    position: relative;
+    padding-inline-start: 10px; 
+}
+.explore-button
+{
+    display: flex;
+    left : 30%;
+}
+
+}
+.bottom-contact
+{
+    background-color : rgb(18, 38, 90);
+    width : auto;
+    height : 400px;
+    display: flex;
+    flex-direction: row;
+}
+.firm-info
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 15%;
+    top : 20%;
+
+}
+.firm-info-img
+{
+    position: relative;
+    width : 20px;
+    height : 20px;
+    object-fit: none;
+    margin-bottom: 40px;
+}
+.firm-info p
+{
+    color : rgb(146, 146, 146);
+    font-family: "Nunito";
+    font-size: 18px;
+    width : 280px;
+    margin-top: 10px;
+}
+
+.firm-social-media-handle
+{
+    display: flex;
+    flex-direction: row;
+}
+.firm-social-media-handle p
+{
+    background-color: #273a7e;
+    align-items: center;
+}
+
+  .fa {
+    padding: 18px;
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  
+  .fa-facebook {
+    background: #273a7e;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+   .fa-instagram{
+    background: rgb(227, 96, 118);
+    color: white;
+  }
+
+
+.content-links
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 20%;
+    top : 20%;
+}
+.content-links h1
+{
+    color : white;
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 18px;
+}
+.content-links p
+{
+    color : rgb(221, 213, 213);
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.content-links p:hover
+{
+    color : white;
+    
+}
+
+.content-address
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 30%;
+    top : 20%;
+}
+
+.content-address h1
+{
+    color : white;
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 18px;
+}
+.content-address p
+{
+    color : rgb(221, 213, 213);
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.content-address p:hover
+{
+    color : white;
+}
+
+
+.subscribe-mail
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 38%;
+    top : 20%;
+}
+
+.input-box
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 12px;
+}
+
+.subscribe-mail input{
+    width : 230px;
+    height : 55px;
+    border : none;
+    border-radius : 14px;
+}
+
+.subscribe-mail input::placeholder
+{
+    color : rgb(223, 220, 220);
+    font-size: 14px;
+    align-items: start;
+    position: relative;
+    padding-inline-start: 10px;
+}
+.subscribe-mail h1
+{
+    color : white;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+.submit-button
+{
+    background-color: rgb(254, 75, 123);
+    color : white;
+    width : 48px;
+    height : 40px;
+    border : none;
+    border-radius: 10px;
+    margin-left: -52px;
+    margin-top: 8px;
+    margin-right: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.copyright
+{
+    display: flex;
+    background-color: #1f2b56;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+.copyright p
+{
+    font-family: "Nunito";
+    font-size: 18px;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (max-width : 786px) {
+    
+.bottom-contact
+{
+    background-color : rgb(18, 38, 90);
+    width : auto;
+    height : auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex : 1 1;
+}
+.firm-info
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 15%;
+    top : 20%;
+
+}
+.firm-info-img
+{
+    position: relative;
+    width : 17px;
+    height : 17px;
+    object-fit: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.firm-info p
+{
+    color : rgb(146, 146, 146);
+    font-family: "Nunito";
+    font-size: 18px;
+    width : 280px;
+    margin-top: 10px;
+}
+
+.firm-social-media-handle
+{
+    display: flex;
+    flex-direction: row;
+}
+.firm-social-media-handle p
+{
+    background-color: #273a7e;
+    align-items: center;
+}
+
+  .fa {
+    padding: 18px;
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  
+  .fa-facebook {
+    background: #273a7e;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+   .fa-instagram{
+    background: rgb(227, 96, 118);
+    color: white;
+  }
+
+
+.content-links
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 18%;
+}
+.content-links h1
+{
+    color : white;
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 18px;
+    top : 10%;
+}
+.content-links p
+{
+    color : rgb(221, 213, 213);
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.content-links p:hover
+{
+    color : white;
+    
+}
+
+.content-address
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 10%;
+    top : 24%;
+}
+
+.content-address h1
+{
+    color : white;
+    font-family: "Nunito";
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 18px;
+}
+.content-address p
+{
+    color : rgb(221, 213, 213);
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.content-address p:hover
+{
+    color : white;
+}
+
+
+.subscribe-mail
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left : 14%;
+    top : 20%;
+}
+
+.input-box
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 12px;
+}
+
+.subscribe-mail input{
+    width : 230px;
+    height : 55px;
+    border : none;
+    border-radius : 14px;
+}
+
+.subscribe-mail input::placeholder
+{
+    color : rgb(223, 220, 220);
+    font-size: 14px;
+    align-items: start;
+    position: relative;
+    padding-inline-start: 10px;
+}
+.subscribe-mail h1
+{
+    color : white;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+.submit-button
+{
+    background-color: rgb(254, 75, 123);
+    color : white;
+    width : 48px;
+    height : 40px;
+    border : none;
+    border-radius: 10px;
+    margin-left: -52px;
+    margin-top: 8px;
+    margin-right: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.copyright
+{
+    display: flex;
+    background-color: #1f2b56;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+.copyright p
+{
+    font-family: "Nunito";
+    font-size: 18px;
+    align-items: center;
+    color: white;
+}
+    
+}
